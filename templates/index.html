@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <title>Minha Empresa</title>
+    <meta charset="UTF-8">
+    <title>Kövex - Soluções Industriais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="lesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>Bem-vindo ao site da Minha Empresa!</h1>
-    <p>Seu site no ar!</p>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo-kovex.png') }}" alt="Logo Kövex" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Soluções Industriais Inteligentes</h1>
+        <p>Eficiência, inovação e precisão para sua linha de produção.</p>
+    </section>
+
+    <section id="produtos" class="produtos">
+        <h2>Nossos Equipamentos</h2>
+        <div class="cards">
+            <div class="card">
+ com esteiras modulares de alta resistência.</p>
+            </div>
+            <div class="card">
+                <h3>Paletizador</h3>
+                <p>Posicionamento automatizado de cargas sobre paletes com precisão e segurança.</p>
+            </div>
+            <div class="card">
+                <h3>Despaletizador</h3>
+                <p> </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre a Kövex</h2>
+        <p>A Kövex é especializada em soluções industriais e logísticas, com foco em eficiência, inovação e confiabilidade. Atuamos com equipamentos modulares, automação e engenharia de precisão para otimizar processos produtivos.</p>
+    </section>
+
+    <footer>
+        <p>© Kövex 2025 - Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
